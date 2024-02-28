@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p,
+h2,
+h3 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSansRegular"), url("../fonts/OpenSansRegular.woff2") format("woff2"),
+    url("../fonts/OpenSansRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSansSemiBold"), url("../fonts/OpenSansSemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSansSemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSansBold"), url("../fonts/OpenSansBold.woff2") format("woff2"),
+    url("../fonts/OpenSansBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'OpenSans', sans-serif;
+  background-color: #ffffff;
+}
+
+/* glob ============================================ */
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 600px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+/* ======================================= */
+.header {
+  margin-bottom: 30px;
+}
+
+.logo {
+  display: inline;
+  width: 25px;
+  margin-right: 15px;
+}
+
+.title {
+  display: inline;
+
+  color: brown;
+}
+
+.note {
+  font-size: 12px;
+}
+
+.project__title {
+  color: #CC9933;
+  margin-bottom: 20px;
+}
+
+.project__link {
+  color: blue;
+  margin-bottom: 10px;
+}
+
+.project__descr {
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.contacts__title {
+  color: brown;
+  margin-bottom: 10px;
+}
+
+.contacts__item {
+  margin-right: 10px;
+  color: #CC9933;
+}
+
+.contacts__tel, .contacts__email {
+  color: blue;
+}
